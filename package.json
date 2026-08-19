@@ -1,0 +1,71 @@
+{
+  "name": "moekyaw-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Professional Android developer dashboard for project progress, skills, roadmap, and certificates.",
+  "author": {
+    "name": "Moe Kyaw Aung",
+    "email": "your-email@example.com",
+    "url": "https://github.com/Dev-moe-kyawaung"
+  },
+  "license": "MIT",
+  "homepage": "https://your-domain.example",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dev-moe-kyawaung/moekyaw-dashboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dev-moe-kyawaung/moekyaw-dashboard/issues"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "dashboard",
+    "android",
+    "kotlin",
+    "jetpack-compose",
+    "portfolio",
+    "ci-cd"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "rm -rf dist",
+    "check": "npm run lint && npm run build",
+    "deploy:cloudflare": "npm run build && wrangler pages deploy dist",
+    "deploy:netlify": "npm run build && netlify deploy --prod --dir=dist",
+    "deploy:vercel": "npm run build && vercel --prod"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "recharts": "^2.14.1",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.15.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "prettier": "^3.4.2",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.1",
+    "vitest": "^2.1.5"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}
